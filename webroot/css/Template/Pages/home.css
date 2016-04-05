@@ -1,0 +1,41 @@
+h1 {
+    color: #39aeb9;
+    font-weight: bold;
+    margin-top: 75px;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 3px solid #DDDDDD;
+    color: #5A5A5A;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+p {
+    padding: 0px 30px;
+}
+
+ol {
+    padding: 0px 20px;
+}
+
+.test-info-sect {
+    margin-bottom: 30px;
+}
+
+.test-info-sub {
+    margin-left: 20px;
+}
+
+.test-info-num {
+    color: #5A5A5A;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#test-info-button-container {
+    margin-top: 40px;
+    text-align: center;    
+}

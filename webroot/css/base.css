@@ -1,5 +1,6 @@
 html {
     font-family: 'Open Sans', sans-serif;
+    color: #333;
 }
 
 body {
@@ -14,8 +15,16 @@ nav li:last-child {
     margin-right: 10px;
 }
 
+.container {
+    margin-top: 75px;
+}
+
+
 h1 {
+    color: #39aeb9;
     font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 h2 {
@@ -30,13 +39,16 @@ p {
     margin-bottom: 0px;
 }
 
-.button {
-    background-color: #39aeb9;
-    font-weight: bold;
-    color: white;
-    padding: 10px;
+#alert {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-.main-button {
-    font-size: 1.5rem;
+#alert[data-status="true"] {
+    background-color: #a5d6a7;
+}
+
+#alert[data-status="false"] {
+    background-color: #ef9a9a;
 }

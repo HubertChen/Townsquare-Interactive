@@ -40,7 +40,7 @@
                     abstract of the content that expands on clicking “read more”.</p>
                 </div>
                 <div id='test-info-button-container' class='col s12'>
-                    <a class='button main-button' href='/home'>Go Home</a>
+                    <a class='btn-large waves-effect waves-light' href='/home'>Go Home</a>
                 </div>
             </div>
         </div>

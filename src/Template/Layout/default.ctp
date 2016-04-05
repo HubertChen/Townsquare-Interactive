@@ -22,20 +22,41 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Townsquare Interactive - Candidate Test</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' 
+        type='text/css'>
+
     <?= $this->Html->css('materialize.min.css') ?>
     <?= $this->Html->css('base.css') ?>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <?= $this->Html->script('materialize.min.js'); ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' 
-        type='text/css'>
 </head>
 <body>
     <?= $this->Element('nav'); ?>
+
+    <div id='alert-container'>
+        <?php if(isset($alertStatus) && isset($alertMessage)): ?>
+            <div id='alert' data-status='<?= empty($alertStatus) ? 'false' : 'true'?>' 
+            style='display:none;'>
+                <?= $alertMessage; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+
     <?= $this->Flash->render() ?>
+
     <div class='container'>
         <?= $this->fetch('content') ?>
     </div>
+
+    <script type='text/javascript'>
+        $(function() {
+            $('#alert').slideDown(500);
+        });
+    </script>
 </body>
 </html>

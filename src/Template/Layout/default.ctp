@@ -28,6 +28,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' 
+        type='text/css'>
 </head>
 <body>
     <?= $this->Element('nav'); ?>

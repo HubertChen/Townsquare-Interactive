@@ -1,0 +1,38 @@
+.subtitle, #author-date-created-container {
+    text-align: center;
+}
+
+#text {
+    position: relative;
+    text-align: justify;
+    margin-top: 40px;
+    line-height: 2em;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#read-more {
+    cursor: pointer;
+    font-weight: bold;
+} 
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.material-icons {
+    position: relative;
+    top: 5px;
+}
+
+.author {
+    margin-right: 20px;
+}

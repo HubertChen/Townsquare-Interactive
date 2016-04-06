@@ -24,16 +24,20 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' 
         type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js'></script>
 
     <?= $this->Html->css('materialize.min.css') ?>
     <?= $this->Html->css('base.css') ?>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <?= $this->Html->script('materialize.min.js'); ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+
 </head>
 <body>
     <?= $this->Element('nav'); ?>
